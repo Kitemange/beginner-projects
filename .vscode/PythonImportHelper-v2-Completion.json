@@ -1,0 +1,153 @@
+[
+    {
+        "label": "notification",
+        "importPath": "plyer",
+        "description": "plyer",
+        "isExtraImport": true,
+        "detail": "plyer",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "YouTube",
+        "importPath": "pytube",
+        "description": "pytube",
+        "isExtraImport": true,
+        "detail": "pytube",
+        "documentation": {}
+    },
+    {
+        "label": "webbrowser",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "webbrowser",
+        "description": "webbrowser",
+        "detail": "webbrowser",
+        "documentation": {}
+    },
+    {
+        "label": "youtube_dl",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "youtube_dl",
+        "description": "youtube_dl",
+        "detail": "youtube_dl",
+        "documentation": {}
+    },
+    {
+        "label": "roll_dice",
+        "kind": 2,
+        "importPath": "dice_role simulator.roll",
+        "description": "dice_role simulator.roll",
+        "peekOfCode": "def roll_dice(num_rolls):\n    results=[]#stores the output after the number of rolls\n    for i in range(num_rolls):\n        result = random.randint(1, 6)\n        results.append(result)\n    return result   \nnum_rolls= int(input(\"How many rolls do you wanna make: \"))\n#roll dice and print the result\nresult = roll_dice(num_rolls)\nprint(\"You rolled the dice {} times: {}\".format(num_rolls, result))",
+        "detail": "dice_role simulator.roll",
+        "documentation": {}
+    },
+    {
+        "label": "result",
+        "kind": 5,
+        "importPath": "dice_role simulator.roll",
+        "description": "dice_role simulator.roll",
+        "peekOfCode": "result = roll_dice(num_rolls)\nprint(\"You rolled the dice {} times: {}\".format(num_rolls, result))",
+        "detail": "dice_role simulator.roll",
+        "documentation": {}
+    },
+    {
+        "label": "slice_mail",
+        "kind": 2,
+        "importPath": "email_slicer.email_slicer",
+        "description": "email_slicer.email_slicer",
+        "peekOfCode": "def slice_mail(email):\n    username, domain = email.strip().split('@')\n    return username, domain\n#processing of each email and storing the result\nresults = []\nfor email in email_list:\n    username, domain = slice_mail(email)\n    results.append((username, domain))\n#print result\nfor username, domain in results:",
+        "detail": "email_slicer.email_slicer",
+        "documentation": {}
+    },
+    {
+        "label": "results",
+        "kind": 5,
+        "importPath": "email_slicer.email_slicer",
+        "description": "email_slicer.email_slicer",
+        "peekOfCode": "results = []\nfor email in email_list:\n    username, domain = slice_mail(email)\n    results.append((username, domain))\n#print result\nfor username, domain in results:\n    print(\"username: {}, Domain: {}\".format(username, domain))",
+        "detail": "email_slicer.email_slicer",
+        "documentation": {}
+    },
+    {
+        "label": "abjective",
+        "kind": 5,
+        "importPath": "mad_libs.mad-libs",
+        "description": "mad_libs.mad-libs",
+        "peekOfCode": "abjective = input(\"Enter an adjective: \")\nNoun = input(\"Enter a noun: \")\nVerb = input(\"Enter a verb: \")\nmad_lib = story_template.format(adjective=abjective,noun=Noun,verb=Verb)\nprint(mad_lib)",
+        "detail": "mad_libs.mad-libs",
+        "documentation": {}
+    },
+    {
+        "label": "Noun",
+        "kind": 5,
+        "importPath": "mad_libs.mad-libs",
+        "description": "mad_libs.mad-libs",
+        "peekOfCode": "Noun = input(\"Enter a noun: \")\nVerb = input(\"Enter a verb: \")\nmad_lib = story_template.format(adjective=abjective,noun=Noun,verb=Verb)\nprint(mad_lib)",
+        "detail": "mad_libs.mad-libs",
+        "documentation": {}
+    },
+    {
+        "label": "Verb",
+        "kind": 5,
+        "importPath": "mad_libs.mad-libs",
+        "description": "mad_libs.mad-libs",
+        "peekOfCode": "Verb = input(\"Enter a verb: \")\nmad_lib = story_template.format(adjective=abjective,noun=Noun,verb=Verb)\nprint(mad_lib)",
+        "detail": "mad_libs.mad-libs",
+        "documentation": {}
+    },
+    {
+        "label": "mad_lib",
+        "kind": 5,
+        "importPath": "mad_libs.mad-libs",
+        "description": "mad_libs.mad-libs",
+        "peekOfCode": "mad_lib = story_template.format(adjective=abjective,noun=Noun,verb=Verb)\nprint(mad_lib)",
+        "detail": "mad_libs.mad-libs",
+        "documentation": {}
+    },
+    {
+        "label": "url",
+        "kind": 5,
+        "importPath": "youtube_downloader.usingpytube",
+        "description": "youtube_downloader.usingpytube",
+        "peekOfCode": "url = input(\"Place the url you want to download: \")\n#The 'yt'object is created by passing te video url as argument to the youtube constructor\nyt = YouTube(url)\n#Download the video\nprint('Downloading...')  #Printing this so that it is visible while downloading.\n#open youtube video while downloading for confirmation\nwebbrowser.open(url)\nvideo_stream= yt.streams.filter(progressive=True).first().download()   #Filtering for progressive streams only and getting first one",
+        "detail": "youtube_downloader.usingpytube",
+        "documentation": {}
+    },
+    {
+        "label": "yt",
+        "kind": 5,
+        "importPath": "youtube_downloader.usingpytube",
+        "description": "youtube_downloader.usingpytube",
+        "peekOfCode": "yt = YouTube(url)\n#Download the video\nprint('Downloading...')  #Printing this so that it is visible while downloading.\n#open youtube video while downloading for confirmation\nwebbrowser.open(url)\nvideo_stream= yt.streams.filter(progressive=True).first().download()   #Filtering for progressive streams only and getting first one",
+        "detail": "youtube_downloader.usingpytube",
+        "documentation": {}
+    },
+    {
+        "label": "ydl_opts",
+        "kind": 5,
+        "importPath": "youtube_downloader.y_downloader",
+        "description": "youtube_downloader.y_downloader",
+        "peekOfCode": "ydl_opts = {\n    'format': 'bestvideo[ext=mp4]+bestaudio[ext=m4a]',\n    'outtmpl': '%(title)s.%(ext)s',\n}\ntdl = youtube_dl.YoutubeDL(ydl_opts)\n#download the video\nurl=input(\"Enterthe url to the youtube video: \")\ntdl.download([url])",
+        "detail": "youtube_downloader.y_downloader",
+        "documentation": {}
+    },
+    {
+        "label": "tdl",
+        "kind": 5,
+        "importPath": "youtube_downloader.y_downloader",
+        "description": "youtube_downloader.y_downloader",
+        "peekOfCode": "tdl = youtube_dl.YoutubeDL(ydl_opts)\n#download the video\nurl=input(\"Enterthe url to the youtube video: \")\ntdl.download([url])",
+        "detail": "youtube_downloader.y_downloader",
+        "documentation": {}
+    }
+]
